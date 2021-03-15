@@ -1,24 +1,5 @@
-const message: string = "Hello World"
-console.log(message)
+const button = document.querySelector('button');
+const input1 = document.querySelector('#num1') as HTMLInputElement;
+const input2 = document.querySelector('#num2') as HTMLInputElement;
 
-const person: {
-    name: string,
-    age: number
-} = {
-    name: 'Alex',
-    age: 32
-}
-
-interface Person {
-    firstName: string,
-    lastName: string,
-    sayHi(): string
-}
-
-const customer: Person = {
-    firstName: 'Laura',
-    lastName: 'Williams',
-    sayHi() { return `Hello, ${this.firstName} ${this.lastName}` }
-}
-
-console.log(customer.sayHi)
+function add(num1: number, num)
